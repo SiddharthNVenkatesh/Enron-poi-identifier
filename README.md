@@ -1,0 +1,9 @@
+# Enron-poi-identifier: Building a classifier for identifying persons of interest in the Enron fraud investigation.
+
+These are the project files for Udacity's Introduction to Machine Learning course. Started code was obtained from the github page of the course: https://github.com/udacity/ud120-projects.
+
+This github repository contains files for a number of mini-projects whose goal is to teach the usage of certain machine learning tools on scikitlearn. These files contain my solutions to these mini projects, but the code is mostly for self-practice and isn't intended to be read by others. As such, it is not particularly readable.
+
+The two main files this repository is focused on are the two Jupyter notebooks that cover the final project of the course. The goal of the final project is to build a classifier that can predict whether an Enron employee should have been a person of interest in the fraud investigation. In the first notebook, titled Exploratory Analysis, we visualize the data and study the relationship of the features with the poi (person of interest) label. We also normalize some of the data to create a better feature. Additionally, the data is quite messy and has a number of missing values, so we looked at two different ways to impute numeric values to the missing data. 
+
+In the second notebook, titled Poi Identifier, we built some machine learning models on the data. We start with some feature selection via decision tree feature importances and then train a decision tree classifier. This classifier doesn't give incredible results, as the data is not particularly seperable, but we hit the targets expected by Udacity. We also develop a scoring metric that helps deal with issue of just not having enough data. The next step in the project is to deal with the problem of overfitting by training a Random Forest Classifier and then to deal with the imbalanced class issue via oversampling.
